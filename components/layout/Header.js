@@ -1,33 +1,24 @@
 import React from "react";
 import Image from "next/image";
-import { vector } from "../../images";
-
+import { vectorblack } from "../../images";
 function Header(props) {
   const styles = props.styles;
   return (
-    <div className={styles.header}>
-      <div className={styles.header__top}>
-        <div className={styles.nav}>
-          <Image src={vector} alt='Vector Image' />
+    <div className={styles.app__header}>
+      <div className={styles.header}>
+        <div className={styles.header__logo}>
+          Mootassam
+          <div className={styles.logo__vector}>
+            <Image src={vectorblack} />
+          </div>
+        </div>
+        <div className={styles.header__links}>
           <ul>
-            <li>
-              <a href='#offres'> Top offers </a>
-            </li>
-            <li>
-              <a href=''> Search in offers</a>
-            </li>
-            <li>
-              <a href='#references1'> References</a>
-            </li>
-            <li>
-              <a href='#aboutus'> About us</a>
-            </li>
-            <li>
-              <a href='#team'> Our team</a>
-            </li>
+            <li>About</li>
+            <li>Works</li>
+            <li>Contact</li>
           </ul>
         </div>
-        <div className={styles.button__large}>Contact us</div>
       </div>
     </div>
   );

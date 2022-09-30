@@ -11,13 +11,15 @@
   /* primary color  */
   --black: #000000;
   --white: #ffffff;
-
-  /* secondary color */
   --violet: #495482;
+  --orange: #ff7a46;
+  /* secondary color */
   --active-violet: #606b99;
   --secondary-black: #08090d;
-  --orange: #ff7a46;
   --secondary-orange: ##fca17d;
+  --gray: #cbcbcb;
+  --background-white: #7d7b7b;
+  --background-black: #101114;
 }
 body {
   /* font-family: "Pacifico", cursive; */
@@ -59,6 +61,8 @@ li {
   font-family: "Tajawal";
   list-style: none;
   cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
 }
 p {
   font-weight: 400;
