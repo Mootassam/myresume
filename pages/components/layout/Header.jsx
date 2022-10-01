@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { vectorblack } from "../../images";
+import { vectorblack } from "../../../images";
+import Link from "next/link";
 function Header(props) {
   const styles = props.styles;
   return (
@@ -14,7 +15,9 @@ function Header(props) {
         </div>
         <div className={styles.header__links}>
           <ul>
-            <li>About</li>
+            <Link href='/About' passHref={true}>
+              <li>About</li>
+            </Link>
             <li>Works</li>
             <li>Contact</li>
           </ul>

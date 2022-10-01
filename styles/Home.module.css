@@ -27,7 +27,7 @@
   justify-content: space-between;
   column-gap: 50px;
 }
-.header__links:has(li) {
+.header__links li {
   font-size: 24px;
   line-height: 29px;
   color: var(--black);
@@ -49,16 +49,28 @@
 
 /* styling the home Page  */
 .app__content {
-  max-width: 500px;
-  margin-inline: auto;
-  padding-top: 73px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.content {
+  max-width: 1170px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   row-gap: 20px;
   align-items: center;
   text-align: center;
-  padding-bottom: 100px;
+}
+.app__content h1 > span {
+  color: #606b99;
+  text-shadow: 0px 0px 20px rgba(96, 107, 153, 0.12) !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
 }
 .sub__header {
   font-weight: 500;
@@ -83,4 +95,24 @@
 }
 .button__work {
   background-color: var(--secondary-orange);
+}
+
+/* styling the about section */
+
+/* Styling the error message  */
+.app__404 {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.error__message {
+  display: flex;
+  max-width: 1170px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 142px;
+}
+.message__left {
+  width: 611px;
 }
