@@ -92,6 +92,8 @@
 
 .button__about {
   background-color: var(--violet);
+  filter: drop-shadow(0px 0px 200px rgba(96, 107, 153, 0.12));
+  width: max-content;
 }
 .button__work {
   background-color: var(--secondary-orange);
@@ -99,6 +101,50 @@
 
 /* styling the about section */
 
+.app__about {
+  width: 100vw;
+}
+.about {
+  max-width: 1170px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__content {
+  max-width: calc(100% - 60px);
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 207px;
+}
+.about__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 559px;
+  row-gap: 60px;
+  text-align: start;
+}
+.about__left h3 {
+  color: #08090d;
+}
+
+.left,
+.right {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--secondary-black);
+}
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-black);
+  margin-bottom: 9px;
+}
 /* Styling the error message  */
 .app__404 {
   display: grid;
@@ -115,4 +161,52 @@
 }
 .message__left {
   width: 611px;
+}
+
+/* styling the contact Page  */
+.app__contact {
+  max-width: 1170px;
+  margin: auto;
+  width: 100vw;
+  padding-top: 42px;
+}
+.contact__top {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact__form {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.contact__content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact__formulaire > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: flex-end;
+}
+.contact__adresse {
+  width: 303px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__formulaire {
+  padding: 40px 42px 48px 42px;
+  background: #ffffff;
+  box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 483px;
+  height: 452px;
+  position: relative;
+  top: -65px;
 }

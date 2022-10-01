@@ -8,7 +8,7 @@ function Header(props) {
     <div className={styles.app__header}>
       <div className={styles.header}>
         <div className={styles.header__logo}>
-          Mootassam
+          <Link href='/'> Mootassam</Link>
           <div className={styles.logo__vector}>
             <Image src={vectorblack} />
           </div>
@@ -18,8 +18,12 @@ function Header(props) {
             <Link href='/About' passHref={true}>
               <li>About</li>
             </Link>
-            <li>Works</li>
-            <li>Contact</li>
+            <Link href='/Work'>
+              <li>Works</li>
+            </Link>
+            <Link href='/Contact'>
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
       </div>
