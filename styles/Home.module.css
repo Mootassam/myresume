@@ -1,3 +1,9 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 /* styling the header */
 .app__header {
   width: 100%;
@@ -39,4 +45,42 @@
   position: absolute;
   right: -90px;
   top: 40px;
+}
+
+/* styling the home Page  */
+.app__content {
+  max-width: 500px;
+  margin-inline: auto;
+  padding-top: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  row-gap: 20px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.sub__header {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #08090d;
+}
+.detaill {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+  color: var(--black);
+}
+.content__button {
+  display: flex;
+  justify-content: space-between;
+  width: 305px;
+}
+
+.button__about {
+  background-color: var(--violet);
+}
+.button__work {
+  background-color: var(--secondary-orange);
 }

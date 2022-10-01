@@ -16,7 +16,7 @@
   /* secondary color */
   --active-violet: #606b99;
   --secondary-black: #08090d;
-  --secondary-orange: ##fca17d;
+  --secondary-orange: #fca17d;
   --gray: #cbcbcb;
   --background-white: #7d7b7b;
   --background-black: #101114;
@@ -68,4 +68,14 @@ p {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.3125rem;
+}
+button {
+  border: 0;
+  color: var(--white);
+  padding: 10px 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
 }
