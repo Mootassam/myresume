@@ -19,8 +19,15 @@ function Contact() {
           </div>
           <div className={styles.contact__content}>
             <div className={styles.contact__adresse}>
-              nooruddin.rahmani100@gmail.com <br /> +93 774 995 013 <br /> 5th
-              Avenue, Kunduz, Afghanistan
+              <div className='email'>
+                <p>mootassame@gmail.com </p>
+              </div>
+              <div className='phoneNumber'>
+                <p>+216 55 169 120 </p>
+              </div>
+              <div className='address'>
+                <p>5th Avenue, Kunduz, Afghanistan </p>
+              </div>
             </div>
             <div className={styles.contact__formulaire}>
               <form action=''>

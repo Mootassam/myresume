@@ -198,6 +198,7 @@
   width: 303px;
   display: flex;
   flex-direction: column;
+  row-gap: 22px;
 }
 
 .contact__formulaire {
@@ -209,4 +210,41 @@
   height: 452px;
   position: relative;
   top: -65px;
+}
+.link {
+  color: var(--black);
+}
+
+/* styling the work Page  */
+
+.work__content {
+  padding: 45px;
+  width: 980px;
+  height: 978px;
+  box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.work__content > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  position: relative;
+}
+.work__content > ul > li {
+  background-color: #c4c4c4;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.work__content > ul > li:nth-child(4n) {
+  position: relative;
+  top: -60px;
+}
+.more {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--black);
 }
