@@ -110,3 +110,7 @@ textarea {
 textarea:focus {
   outline: 0;
 }
+a {
+  text-decoration: none;
+  color: var(--secondary-black);
+}

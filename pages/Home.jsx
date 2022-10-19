@@ -1,9 +1,8 @@
-import Head from "next/head";
+import React from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Header } from "./components";
 import { HomeImage } from "../images";
-export default function Index() {
+function Home() {
   return (
     <div className={styles.app__content}>
       <div className={styles.content}>
@@ -29,3 +28,5 @@ export default function Index() {
     </div>
   );
 }
+
+export default Home;
